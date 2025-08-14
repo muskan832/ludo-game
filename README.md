@@ -20,7 +20,7 @@ Click here to play------> https://muskan832.github.io/ludo-game/
 
 
 
-## 📅 Upcoming Features
+##  Upcoming Features
 - Dice rolling animation
 - Pawn movement
 - Multiplayer support
