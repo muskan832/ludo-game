@@ -11,14 +11,13 @@ Currently, it is a static design – future updates will make it playable.
 - Neat & scalable design
 
 ## 🚀 Live Demo
-[Click here to play]
+Click here to play------> https://muskan832.github.io/ludo-game/
 
 ## 🛠 Tech Stack
 - HTML5
 - CSS3
 - JavaScript (Planned for logic)
 
-## 📷 Screenshot
 
 
 ## 📅 Upcoming Features
