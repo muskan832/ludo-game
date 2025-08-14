@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUDO DESIGN</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .outer {
+      height: 750px;
+      width: 750px;
+      border: 1px solid red;
+      margin: 0 auto;
+    }
+
+    .box_row {
+      width: 750px;
+      display: flex;
+    }
+
+    .box {
+      height: 300px;
+      width: 300px;
+      background-color: white;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+    }
+
+    .border_red {
+      border: 50px solid rgb(167, 12, 12);
+    }
+
+    .border_green {
+      border: 50px solid green;
+    }
+
+    .border_blue {
+      border: 50px solid blue;
+    }
+
+    .border_yellow {
+      border: 50px solid yellow;
+    }
+
+    .circle {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      margin: 25px;
+    }
+
+    .v_lad {
+      height: 300px;
+      width: 150px;
+      background: #ff8596;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .v_lad_row {
+      height: 50px;
+      width: 150px;
+      display: flex;
+    }
+
+    .cell {
+      height: 50px;
+      width: 50px;
+      border: 1px solid #000;
+      background-color: white;
+      text-align: center;
+    }
+
+    .red {
+      background: red;
+    }
+
+    .green {
+      background: green;
+    }
+
+    .blue {
+      background: blue;
+    }
+
+    .yellow {
+      background: yellow;
+    }
+
+    .middle_row {
+      height: 150px;
+      width: 750px;
+      display: flex;
+    }
+
+    .h_lad {
+      height: 150px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .h_lad_row {
+      height: 50px;
+      width: 300px;
+      display: flex;
+    }
+
+    .ludo_home {
+      width: 0;
+      height: 0;
+      border-left: 75px solid red;
+      border-right: 75px solid yellow;
+      border-top: 75px solid green;
+      border-bottom: 75px solid blue;
+    }
+    .star
+    {
+      font-size: 35px;
+    }
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <!-- Top Row -->
+    <div class="box_row">
+      <div class="box border_red">
+        <div class="circle" style="border:5px solid red;"></div>
+        <div class="circle" style="border:5px solid red;"></div>
+        <div class="circle" style="border:5px solid red;"></div>
+        <div class="circle" style="border:5px solid red;"></div>
+      </div>
+
+      <div class="v_lad">
+        <div class="v_lad_row">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="v_lad_row">
+          <div class="cell"></div>
+          <div class="cell green"></div>
+          <div class="cell green"><span class="star">&#9733;</span></div>
+        </div>
+        <div class="v_lad_row">
+          <div class="cell"><span class="star">&#9733;</span></div>
+          <div class="cell green"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="v_lad_row">
+          <div class="cell"></div>
+          <div class="cell green"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="v_lad_row">
+          <div class="cell"></div>
+          <div class="cell green"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="v_lad_row">
+          <div class="cell"></div>
+          <div class="cell green"></div>
+          <div class="cell"></div>
+        </div>
+      </div>
+
+      <div class="box border_green">
+        <div class="circle" style="border:5px solid green;"></div>
+        <div class="circle" style="border:5px solid green;"></div>
+        <div class="circle" style="border:5px solid green;"></div>
+        <div class="circle" style="border:5px solid green;"></div>
+      </div>
+    </div>
+
+    <!-- Middle Row -->
+    <div class="middle_row">
+      <div class="h_lad">
+        <div class="h_lad_row">
+          <div class="cell"></div>
+          <div class="cell red"><span class="star">&#9733;</span></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="h_lad_row">
+          <div class="cell"></div>
+          <div class="cell red"></div>
+          <div class="cell red"></div>
+          <div class="cell red"></div>
+          <div class="cell red"></div>
+          <div class="cell red"></div>
+        </div>
+        <div class="h_lad_row">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell "><span class="star">&#9733;</span></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+      </div>
+
+      <div class="ludo_home"></div>
+
+      <div class="h_lad">
+        <div class="h_lad_row">
+          <div class="cell"></div>
+          <div class="cell "></div>
+          <div class="cell"></div>
+          <div class="cell"><span class="star">&#9733;</span></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="h_lad_row">
+          <div class="cell yellow"></div>
+          <div class="cell yellow"></div>
+          <div class="cell yellow"></div>
+          <div class="cell yellow"></div>
+          <div class="cell yellow"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="h_lad_row">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell yellow"><span class="star">&#9733;</span></div>
+          <div class="cell"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Row -->
+    <div class="box_row">
+      <div class="box border_blue">
+        <div class="circle" style="border:5px solid blue;"></div>
+        <div class="circle" style="border:5px solid blue;"></div>
+        <div class="circle" style="border:5px solid blue;"></div>
+        <div class="circle" style="border:5px solid blue;"></div>
+      </div>
+
+      <div class="v_lad">
+        <div class="v_lad_row">
+          <div class="cell"></div>
+          <div class="cell blue"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="v_lad_row">
+          <div class="cell"></div>
+          <div class="cell blue"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="v_lad_row">
+          <div class="cell"></div>
+          <div class="cell blue"></div>
+          <div class="cell "></div>
+        </div>
+        <div class="v_lad_row">
+          <div class="cell "></div>
+          <div class="cell blue"></div>
+          <div class="cell"><span class="star">&#9733;</span></div>
+        </div>
+        <div class="v_lad_row">
+          <div class="cell blue"><span class="star">&#9733;</span></div>
+          <div class="cell blue"></div>
+          <div class="cell "></div>
+        </div>
+        <div class="v_lad_row">
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+      </div>
+
+      <div class="box border_yellow">
+        <div class="circle" style="border:5px solid yellow;"></div>
+        <div class="circle" style="border:5px solid yellow;"></div>
+        <div class="circle" style="border:5px solid yellow;"></div>
+        <div class="circle" style="border:5px solid yellow;"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
